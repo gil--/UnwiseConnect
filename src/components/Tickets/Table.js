@@ -238,7 +238,7 @@ TicketsTable.defaultProps = {
       header: {
         label: 'Toggl',
       },
-      visible: true,
+      visible: this.props.toggl ? true : false,
       cell: {
         resolve: value => `(${value})`,
         formatters: [
